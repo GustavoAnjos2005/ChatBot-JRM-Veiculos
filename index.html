@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRM Veículos - Chatbot</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="desc">
+            <h1 class="text">Chatbot JRM Veículos</h1>
+            <p>Seja bem-vindo ao nosso ChatBot! Aqui você pode explorar os modelos e marcas de produtos que estamos oferecendo no momento, entrar em contato conosco através das opções disponíveis e até mesmo fazer uma pré-análise para descobrir se você pode alugar ou comprar algum dos nossos produtos.</p>
+            <button id="init">COMEÇAR CHAT</button>
+        </div>
+        <div>
+            <img src="imagens/logo (2).png" alt="" class="bot-img">
+        </div>
+    </div>
+    <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="imagens/chatbot (1).png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">JRM ChatBot</span>
+                        <br>
+                        <span style="color:lawngreen">online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                </div>
+            </div>
+
+            <div id="chat-box">
+
+            </div>
+            <div class="footer">
+                <span>powered by@JRM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- js file  -->
+    <script src="/script.js"></script>
+</body>
+</html>
